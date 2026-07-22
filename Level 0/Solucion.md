@@ -59,4 +59,8 @@ Con esto terminamos el nivel 0, ya que solamente se indica que entremos por ssh 
 
 ## bandit0 ➸ bandit1
 ### Experiencia:
--
+- Debido a que ya sabia hacer lo básico como listar el contenido de un directorio, crear carpetas, moverme entre directorios, crear archivos, cambiar permisos, algunas de las rutas básicas como donde esta la configuración de red,para el despliegue de un servicio web como Nginx, etc, no fue complicado el encontrar el archivo readme e imprimir su contenido
+
+
+### Procedimiento:
+- Una vez estando dentro de la maquina de bandit0 simplemente fue hacer un ls ya que al ingresar a un vm me mando directamente al home del usuario o bien se puede ir a esa ruta solamente con un cd 

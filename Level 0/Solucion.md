@@ -54,6 +54,9 @@ ssh -p 2220 bandit0@bandit.labs.overthewire.org
 Tras ingresar el comando, se solicita la contraseña, que es `bandit0`, proporcionada por el propio nivel.
 
 Con esto se da por terminado el nivel 0, ya que únicamente se pedía conectarse por SSH a la máquina virtual.
+
+### Evidencia
+
 ![Acceso bandit0](../img/Level%200/AccederBandit0.png)
 
 

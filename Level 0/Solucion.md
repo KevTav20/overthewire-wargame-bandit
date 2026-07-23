@@ -4,9 +4,7 @@
 The goal of this level is for you to log into the game using SSH. The host to which you need to connect is bandit.labs.overthewire.org, on port 2220. The username is bandit0 and the password is bandit0. Once logged in, go to the Level 1 page to find out how to beat Level 1.
 
 #### Commands you may need to solve this level
-```
-ssh
-```
+`ssh`
 
 Helpful Reading Material
 Secure Shell (SSH) on Wikipedia
@@ -18,9 +16,7 @@ How to use SSH with ssh-keys on wikiHow
 The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.
 
 #### Commands you may need to solve this level
-```
-ls , cd , cat , file , du , find
-```
+`ls , cd , cat , file , du , find `
 
 TIP: Create a file for notes and passwords on your local machine!
 
@@ -64,9 +60,12 @@ Con esto se da por terminado el nivel 0, ya que únicamente se pedía conectarse
 ## bandit0 ➸ bandit1
 
 ### Experiencia:
+
 Como ya sabía manejar lo básico —listar el contenido de un directorio, crear carpetas, moverme entre directorios, crear archivos, cambiar permisos y algunas rutas comunes, como la configuración de red o el despliegue de un servicio web como Nginx—, no fue complicado encontrar el archivo `readme` e imprimir su contenido.
 
 ### Procedimiento:
 Una vez dentro de la máquina de bandit0, bastó con ejecutar un `ls`, ya que al iniciar sesión se accede directamente al home del usuario (también se puede llegar ahí con `cd ~`). Luego, con `cat readme` se muestra el contenido del archivo, que contiene la contraseña necesaria para acceder a la siguiente VM.
+
+### Evidencia
 
 ![Contraseña bandit1](../img/Level%200/ContraseñaBandit1.png)

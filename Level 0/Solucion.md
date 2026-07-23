@@ -58,7 +58,7 @@ ssh -p 2220 bandit0@bandit.labs.overthewire.org
 Tras ingresar el comando, se solicita la contraseña, que es `bandit0`, proporcionada por el propio nivel.
 
 Con esto se da por terminado el nivel 0, ya que únicamente se pedía conectarse por SSH a la máquina virtual.
-![Acceso bandit0](../img/AccederBandit0.png)
+![Acceso bandit0](../img/Level%200/AccederBandit0.png)
 
 
 ## bandit0 ➸ bandit1
@@ -69,4 +69,4 @@ Como ya sabía manejar lo básico —listar el contenido de un directorio, crear
 ### Procedimiento:
 Una vez dentro de la máquina de bandit0, bastó con ejecutar un `ls`, ya que al iniciar sesión se accede directamente al home del usuario (también se puede llegar ahí con `cd ~`). Luego, con `cat readme` se muestra el contenido del archivo, que contiene la contraseña necesaria para acceder a la siguiente VM.
 
-![Contraseña bandit1](../img/ContraseñaBandit1.png)
+![Contraseña bandit1](../img/Level%200/ContraseñaBandit1.png)

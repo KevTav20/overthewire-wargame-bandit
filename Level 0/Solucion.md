@@ -27,15 +27,18 @@ Passwords for levels are not saved automatically. If you do not save them yourse
 Passwords also occasionally change. It is recommended to take notes on how to solve each challenge. As levels get more challenging, detailed notes are useful to return to where you left off, reference for later problems, or help others after you’ve completed the challenge.
 
 # Documentación
-Elegí documentar tanto el nivel 0 como el 0 -> 1 debido a que se trabaja en la misma maquina virtual.
-## bandit0
-### Experiencia:
-- Comencé a utilizar el MobaXterm que es una caja de herramientas para trabajo remoto debido a que ofrece una gran cantidad de funciones diseñadas para programadores, administradores web (webmasters), administradores de Ti y en general para cualquier persona que necesite gestionar tareas remotas de una manera sencilla en windows esta facilita enormemente el escribir el comando completo, debido a que tiene una herramienta explícitamente de ssh el cual solo te pide la info básica de que puerto, dominio o ip, usuario y contraseña
 
-- Como mi propósito es entrenar Linux para ciberseguridad hare todo por la terminal debido a que es mas rápido y no siempre se tendrá una linda interfaz para visualizar el contenido o tener todas las opciones a la mano con solo usar el clic
+Elegí documentar tanto el nivel 0 como el 0 → 1, ya que ambos se resuelven en la misma máquina virtual.
+
+## bandit0
+
+### Experiencia:
+Comencé usando MobaXterm, una herramienta para trabajo remoto que ofrece múltiples funciones pensadas para programadores, administradores web, administradores de TI y, en general, para cualquier persona que necesite gestionar tareas remotas de forma sencilla en Windows. Facilita enormemente la conexión SSH, ya que cuenta con una herramienta dedicada que solo pide la información básica: puerto, dominio o IP, usuario y contraseña.
+
+Sin embargo, como mi objetivo es entrenar Linux para ciberseguridad, decidí trabajar todo desde la terminal, ya que es más rápido y no siempre se cuenta con una interfaz gráfica que muestre el contenido o las opciones disponibles con solo un clic.
 
 ### Procedimiento:
-Se utilizo el siguiente comando para conectarse via remota hacia la vm el cual es: Se utilizó el siguiente comando para conectarse vía remota hacia la VM:
+Se utilizó el siguiente comando para conectarse de forma remota a la VM:
 
 <div style="text-align:center; margin:1em 0;">
     <code>
@@ -46,21 +49,21 @@ Se utilizo el siguiente comando para conectarse via remota hacia la vm el cual e
     </code>
 </div>
 
-- <span style="color:#2563EB;">ssh</span>: Inicia una conexión remota segura y nos permite acceder y administrar un equipo remoto de forma cifrada.
-- <span style="color:#F59E0B;">-p</span>: Indica el puerto al que el SSH debe conectarse, si este no es especificado se utilizara el 22 que es el que esta por defecto.
-- <span style="color:#22C55E;">2220</span>: Valor del parámetro -p y este indica que la conexión se realizara a traves del puerto 2220.
-- <span style="color:#A855F7;">bandit0</span>: Nombre de Usuario con el que se iniciara sesión en el servidor remoto.
-- <span style="color:#6B7280;">@</span>: Separador que une el nombre del usuario con el servidor a que se desea conectar.
-- <span style="color:#06B6D4;">bandit.labs.overthewire.org</span> nombre del dominio (hostname) del servidor remoto.
+- <span style="color:#2563EB;">ssh</span>: inicia una conexión remota segura que permite acceder y administrar un equipo de forma cifrada.
+- <span style="color:#F59E0B;">-p</span>: indica el puerto al que SSH debe conectarse; si no se especifica, se utiliza el 22 por defecto.
+- <span style="color:#22C55E;">2220</span>: valor del parámetro `-p`; indica que la conexión se realizará a través del puerto 2220.
+- <span style="color:#A855F7;">bandit0</span>: nombre de usuario con el que se iniciará sesión en el servidor remoto.
+- <span style="color:#6B7280;">@</span>: separador que une el nombre de usuario con el servidor al que se desea conectar.
+- <span style="color:#06B6D4;">bandit.labs.overthewire.org</span>: nombre del dominio (hostname) del servidor remoto.
 
-luego de ingresar el comando se solicitara que se ingrese la contraseña que es bandit0 dada por el mismo nivel
+Tras ingresar el comando, se solicita la contraseña, que es `bandit0`, proporcionada por el propio nivel.
 
-Con esto terminamos el nivel 0, ya que solamente se indica que entremos por ssh a la maquina virtual
+Con esto se da por terminado el nivel 0, ya que únicamente se pedía conectarse por SSH a la máquina virtual.
 
 ## bandit0 ➸ bandit1
-### Experiencia:
-- Debido a que ya sabia hacer lo básico como listar el contenido de un directorio, crear carpetas, moverme entre directorios, crear archivos, cambiar permisos, algunas de las rutas básicas como donde esta la configuración de red,para el despliegue de un servicio web como Nginx, etc, no fue complicado el encontrar el archivo readme e imprimir su contenido
 
+### Experiencia:
+Como ya sabía manejar lo básico —listar el contenido de un directorio, crear carpetas, moverme entre directorios, crear archivos, cambiar permisos y algunas rutas comunes, como la configuración de red o el despliegue de un servicio web como Nginx—, no fue complicado encontrar el archivo `readme` e imprimir su contenido.
 
 ### Procedimiento:
-- Una vez estando dentro de la maquina de bandit0 simplemente fue hacer un ls ya que al ingresar a un vm me mando directamente al home del usuario o bien se puede ir a esa ruta solamente con un cd 
+Una vez dentro de la máquina de bandit0, bastó con ejecutar un `ls`, ya que al iniciar sesión se accede directamente al home del usuario (también se puede llegar ahí con `cd ~`). Luego, con `cat readme` se muestra el contenido del archivo, que contiene la contraseña necesaria para acceder a la siguiente VM.
